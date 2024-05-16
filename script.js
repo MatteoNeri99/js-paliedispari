@@ -44,11 +44,21 @@
 
 let sceltaUtente=prompt("scegli tra pari o dispari");
 
-console.log(sceltaUtente)
 
 if (sceltaUtente !== "pari" && sceltaUtente !== "dispari"){
 
     sceltaUtente="pari";
-
-    console.log(sceltaUtente)
 }
+
+let schieramentoPc;
+
+if (sceltaUtente === "pari"){
+
+    schieramentoPc="dispari";
+}else 
+
+    schieramentoPc="pari";
+
+
+
+
