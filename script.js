@@ -2,19 +2,21 @@ let parolaUtente=prompt("scrivi una parola palindroma");
 
 let parolaUtenteRigirata="";
 
-for (i=parolaUtente.length-1; i >= 0; i--){
-
-      parolaUtenteRigirata=parolaUtenteRigirata + parolaUtente[i]
-
-}
 
 
-console.log(parolaUtenteRigirata);
+
 
 
 
 function palindroma (parola, parolaUno){
 
+    for (i=parola.length-1; i >= 0; i--){
+
+        parolaUno=parolaUno + parola[i]
+        
+        
+    }
+     console.log(parolaUno)
     
     if(parola === parolaUno){
 
@@ -24,7 +26,7 @@ function palindroma (parola, parolaUno){
         
 
     }else if (parola !== parolaUno){
-        let falso="bravo la parola inserita non è palindroma";
+        let falso="la parola inserita non è palindroma";
 
         return falso;
     }
