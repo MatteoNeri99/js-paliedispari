@@ -60,5 +60,11 @@ if (sceltaUtente === "pari"){
     schieramentoPc="pari";
 
 
+let numeroUtente =prompt("scrivi un numero da 1 a 5");
 
+if (numeroUtente > 1 || numeroUtente < 5){
+
+    numeroUtente=3;
+
+}
 
