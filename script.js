@@ -66,5 +66,10 @@ if (numeroUtente > 1 || numeroUtente < 5){
 
     numeroUtente=3;
 
+}else if(numeroUtente !== Number){
+
+    numeroUtente=3;
 }
+
+
 
