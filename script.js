@@ -73,23 +73,46 @@ if (numeroUtente > 1 || numeroUtente < 5){
 
 let numeroPc =Math.floor(Math.random() * 5 + 1);
 
-function addizione (numero, numeroUno){
+console.log(sceltaUtente, numeroUtente)
+
+console.log(schieramentoPc, numeroPc)
+
+
+
+function pariDispari (numero, numeroUno){
 
     let somma= numero + numeroUno;
 
-    if (somma %2==0 ){
+    let risultato;
 
-        somma="pari"
+    if(somma %2==0  || somma %2==1 ){
+
+        risultato="pari"
 
     }else {
 
-        somma="dispari";
-
+        risultato="dispari"
+        
     }
 
-      return somma;
+    console.log(risultato)
+
+    return risultato;
 
 }
+
+
+let esito = pariDispari(numeroUtente, numeroPc)
+
+if (sceltaUtente === esito){
+
+    console.log("ha vinto l'utente");
+}else{
+
+    console.log("ha vinto il pc");
+}
+
+
 
 
 
