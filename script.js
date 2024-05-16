@@ -55,10 +55,10 @@ let schieramentoPc;
 if (sceltaUtente === "pari"){
 
     schieramentoPc="dispari";
-}else 
+}else {
 
     schieramentoPc="pari";
-
+}
 
 let numeroUtente =prompt("scrivi un numero da 1 a 5");
 
@@ -71,7 +71,26 @@ if (numeroUtente > 1 || numeroUtente < 5){
     numeroUtente=3;
 }
 
-let numeroPc =Math.floor(Math.random() * 5 + 1)
+let numeroPc =Math.floor(Math.random() * 5 + 1);
+
+function addizione (numero, numeroUno){
+
+    let somma= numero + numeroUno;
+
+    if (somma %2==0 ){
+
+        somma="pari"
+
+    }else {
+
+        somma="dispari";
+
+    }
+
+      return somma;
+
+}
+
 
 
 
