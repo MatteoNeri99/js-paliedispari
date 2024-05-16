@@ -71,5 +71,7 @@ if (numeroUtente > 1 || numeroUtente < 5){
     numeroUtente=3;
 }
 
+let numeroPc =Math.floor(Math.random() * 5 + 1)
+
 
 
